@@ -1,0 +1,200 @@
+/*  Section1 Desgin 第一個內容區背景 */
+body #section1{
+    background-image: url(img/head.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    height: 1000px;
+    max-width: auto;
+
+}
+
+body *{
+    font-family: serif;
+}
+
+/* 標題大title區*/
+
+body #section1 #section1_text{
+    position:relative;
+    margin:0px auto;
+    color:burlywood;
+    text-align:center;
+    top:5%;
+}
+
+
+body #section1 #section1_text p{
+    font-size:100px;
+    font-weight:bold;
+    position:relative;
+    margin:0px auto;
+    width:700px;
+    border-bottom-style: outset;
+    border-right-style: outset;
+    border-radius: 10px;
+    border-color:navajowhite;
+}
+
+body #section1 #section1_text h1{
+    position:relative;
+    margin:0px auto;
+    border-color:navajowhite;
+    text-decoration:underline;
+    background-color: cornflowerblue;
+    opacity:0.8;
+    width:600px;
+    border-radius: 10px;
+    color:black;
+    
+}
+
+body #section1 #section1_text table{
+    position:relative;
+    margin:0px auto;
+    width:1400px;
+    top:20px;
+    
+}
+
+body #section1 #section1_text table *{
+    font-weight: bold;
+    font-size:20px;
+}
+
+body #section1 #section1_text table .white{
+    background-color: white;
+    color:black;
+    opacity:0.9;    
+}
+
+body #section1 #section1_text table .green{
+    background-color: honeydew;
+    color:black;
+    opacity:0.8;    
+}
+body #section1 #section1_text table .orange{
+    background-color: wheat;
+    color:black;
+    opacity:0.9;    
+}
+body #section1 #section1_text table .pink{
+    background-color: mistyrose;
+    color:black;
+    opacity:0.9;    
+}
+body #section1 #section1_text table .red{
+    background-color: plum;
+    color:black;
+    opacity:0.75;    
+}
+
+body #getit{
+    position:relative;
+    margin:0px auto;
+    text-align:center;
+    top:100px;
+}
+body #getit p{
+    position:relative;
+    margin:0px auto;
+    text-align: center;
+    font-size:30px;
+}
+
+body #getit button{
+    background-color: transparent;
+    outline: none;
+    border:none;
+}
+
+body #getit button i:hover{
+    color:blue;
+}
+
+/* JSON 內容與表格區設定*/
+
+body #section2{
+    background-image:url(img/body.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    height: 100%;
+    max-width: auto;
+}
+
+body #section2 .table *{
+    font-size:30px;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    /*background-color:beige;
+    opacity:0.75;*/
+}
+
+body #section2 #table #content tr:hover{
+        background-color:lightslategray;
+        opacity:0.8;
+}
+
+/*  Section5 Desgin 聯絡資訊背景 */
+body #section3{
+    background-image:url(img/footer.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    height: 500px;;
+    max-width: 100%;
+    position:relative;
+    margin:0px auto;
+    top:-40px;
+}
+
+#section3_text{
+    position:relative;
+    margin:0px auto;
+    color:antiquewhite;
+    text-align:center;
+    top:25%;
+    word-spacing:10px;
+}
+
+#section3_icon{
+    position:relative;
+    margin:0px auto;
+    color:antiquewhite;
+    text-align:center;
+    top:25%;
+    word-spacing:20px;
+}
+
+
+#foorter{
+    background-color:black;
+    height:100px;
+    max-width: 100%;
+    position:relative;
+    margin:0px auto;
+    color:antiquewhite;
+    text-align:center;
+    top:280px;
+}
+
+#copyright{
+    position:relative;
+    top:35%;
+}
+
+#section3_icon *:hover{
+    color:peachpuff;
+}
+
+
+#datafrom{
+    position:relative;
+    text-align: center;
+    font-size:20px;
+}

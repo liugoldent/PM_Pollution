@@ -1,0 +1,139 @@
+<!doctype html>
+    <html long="zh-tw">
+<head>
+          <title>PM 2.5 Pollution</title>
+  <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="pm_pollution.css">
+<!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+ 
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+    
+<!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+ 
+<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    
+<!-- for latest icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    
+
+
+</head>
+
+<body>
+    <div id="section1" >
+        <div id="section1_text">
+            <br>
+            <p>About PM<sub>2.5</sub></p>
+            <br>
+            <h1>PM 2.5 指標 與活動建議</h1>
+            <table class="table table-bordered">
+	           <thead>
+		          <tr>
+			         <th class="white">數值</th>
+			         <th class="white">一般民眾建議</th>
+			         <th class="white">敏感性族群建議</th>
+		          </tr>
+	           </thead>
+	           <tbody>
+		          <tr>
+			         <td class="green">0~35</td>
+			         <td class="green">正常戶外活動</td>
+			         <td class="green">正常戶外活動</td>
+                   </tr>
+		          <tr>
+			         <td class="orange">36~53</td>
+			         <td class="orange">正常戶外活動</td>
+			         <td class="orange">有心臟、呼吸道及心血管疾病的成人與孩童感到徵侯時，應考慮減少體力消耗，特別是減少戶外活動。</td>
+		          </tr>
+		          <tr>
+			         <td class="pink">54~70</td>
+			         <td class="pink">任何人若感到不適，如眼痛、咳嗽或喉嚨痛等，應考慮減少戶外活動，應減少體力消耗，特別是戶外活動。</td>
+			         <td class="pink">
+                         <ul>
+                            <li>有心臟、呼吸道及心血管疾病的成人與孩童感到徵侯時，應考慮減少體力消耗，特別是減少戶外活動。</li>
+                            <li>老年人應減少體力消耗</li>
+                            <li>氣喘的人可能需增加使用吸入劑的頻率</li>
+                         </ul>
+                        </td>
+		          </tr>
+                   
+                   <tr>
+			         <td class="red">>71</td>
+			         <td class="red">任何人若感到不適，如眼痛、咳嗽或喉嚨痛等，應考慮減少戶外活動，應減少體力消耗，特別是戶外活動。</td>
+			         <td class="red">有心臟、呼吸道及心血管疾病的人應避免體力消耗，特別是避免戶外運動</td>
+                   </tr>
+	           </tbody>
+            </table>
+        </div>
+            <div id="getit">
+                <button>
+                    <p>To See Local's Data </p>
+                    <br>
+                    <i class="far fa-arrow-alt-circle-down fa-5x" id="stop" onclick="RenewData()"></i>
+                </button>
+            </div>
+    </div>  
+    
+    <div id="section2">
+    <table class="table table-hover" id="table">
+        <thead>
+                <tr>
+                    <th>更新日期</th>
+                    <th>縣/市</th>
+                    <th>市/區</th>
+                    <th>PM 2.5 數值</th>
+                </tr>
+        </thead>
+        <tbody class="datapoint" id="content">
+                <tr>
+                    <td class="datacontent MonitorDate"></td>
+                    <td class="datacontent County"></td>
+                    <td class="datacontent SiteName"></td>
+                    <td class="datacontent Concentration"></td>
+                </tr>
+        </tbody>
+    </table>    
+        
+        
+    </div>
+    
+    <!--Contact Me -->
+
+    <div id="section3">
+            <div id="section3_text">
+                        <h1>Contact Me</h1>
+                        <hr>
+            </div>
+            <div id="section3_icon">
+                <a href="mailto:liugoldent@gmail.com" style="color:antiquewhite"><i class="fas fa-envelope fa-4x"></i></a>
+                <a href="https://github.com/liugoldent" style="color:antiquewhite"><i class="fab fa-github-square fa-4x"></i></a>
+                <a href="https://www.linkedin.com/in/guan-ting-liu-2016a1109/" style="color:antiquewhite"><i class="fab fa-linkedin fa-4x"></i></a>
+                <a href="https://liugoldent.github.io/LgtProfile/profile.html" style="color:antiquewhite"><i class="fas fa-home fa-4x"></i></a>
+            </div>
+        
+        
+        
+            <footer id="foorter">
+        <div id="copyright">
+            <p>Copyright ©   Guan-Ting Liu   All rights reserved.</p>
+        </div>
+            </footer>
+    </div>
+    
+    <div id="datafrom">
+        <a href="https://opendata.epa.gov.tw/Data/Details/ATM00766/?show=all"><p>政府開源資料</p></a>
+    </div>
+    
+    
+<script src="pm_pollution.js"></script>
+<!--<script src="https://opendata.cwb.gov.tw/fileapi/v1/opendataapi/F-D0047?Authorization=CWB-9B2AEB2E-B9E8-4D21-93AA-A5369BA74CD5&format=JSON&callback=showEvents"></script>-->
+
+</body>
+
+</html>
