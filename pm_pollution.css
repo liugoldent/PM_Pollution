@@ -5,7 +5,7 @@ body #section1{
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-position: center;
-    height: 1000px;
+    height: 1200px;
     max-width: auto;
 
 }
@@ -22,6 +22,7 @@ body #section1 #section1_text{
     color:burlywood;
     text-align:center;
     top:5%;
+    width:auto;
 }
 
 
@@ -53,7 +54,7 @@ body #section1 #section1_text h1{
 body #section1 #section1_text table{
     position:relative;
     margin:0px auto;
-    width:1400px;
+    width:auto;
     top:20px;
     
 }
@@ -111,6 +112,7 @@ body #getit button{
 
 body #getit button i:hover{
     color:blue;
+    transform:scale(1.2,1.2);
 }
 
 /* JSON 內容與表格區設定*/
