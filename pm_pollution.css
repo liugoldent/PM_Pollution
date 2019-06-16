@@ -1,6 +1,6 @@
 /*  Section1 Desgin 第一個內容區背景 */
 body #section1{
-    background-image: url(img/head.jpg);
+    background-image: url(https://i.imgur.com/IYdpxHeh.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment:fixed;
@@ -118,7 +118,7 @@ body #getit button i:hover{
 /* JSON 內容與表格區設定*/
 
 body #section2{
-    background-image:url(img/body.jpg);
+    background-image:url(https://i.imgur.com/1AYTWYSh.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment:fixed;
